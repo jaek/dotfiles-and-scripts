@@ -1,35 +1,44 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
-set background=dark
-" margin at 80 px
-set cc=80
-set guifont=Source\ Code\ Pro\ Semi-Bold\ 12
+
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
-" ColourSchemes:
-Plugin 'sts10/vim-pink-moon'
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-" C# support
-Bundle 'OmniSharp/omnisharp-vim'
-" Statusline
-Plugin 'itchyny/lightline.vim'
-" NerdTree
-Plugin 'scrooloose/nerdtree'
-" YouCompleteMe
-Plugin 'Valloric/YouCompleteMe'
+
+Plugin 'gmarik/Vundle.vim'
+Plugin 'slim-template/vim-slim.git'
+Plugin 'ervandew/supertab'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'vim-airline/vim-airline'
+Plugin 'jnurmine/Zenburn'
+
 call vundle#end()            " required
+colors zenburn
+let g:airline_theme='zenburn'
 filetype plugin indent on    " required
-syntax on
-" required for statusline
-set laststatus=2
-colorscheme industry 
-" keybindings ----
-" map 'enter enter' to insert newline
-nmap <CR><CR> o<ESC>
-" wrapping settings for markdown
-au BufRead,BufNewFile *.md setlocal textwidth=80 wrapmargin=1
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+"
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this line
+" ~~~ MISC ~~~
+" allow mouse for tabs
+:set mouse=a
+
+" ~~~ TABS ~~~
+"
+filetype plugin indent on
+" show existing tab with 4 spaces width
+set tabstop=4
+" when indenting with '>', use 4 spaces width
+set shiftwidth=4
+" On pressing tab, insert 4 spaces
+set expandtab
+
 
