@@ -1,0 +1,38 @@
+ <menu id="Accessories" label="Accessories">
+      <item label="Vim" icon="/usr/share/icons/hicolor/48x48/apps/gvim.png">
+       <action name="Execute"><execute>xterm -e vim </execute></action>
+     </item>
+ </menu> <!-- Accessories -->
+ <menu id="Internet" label="Internet">
+      <item label="Avahi SSH Server Browser">
+       <action name="Execute"><execute>/usr/bin/bssh</execute></action>
+     </item>
+      <item label="Avahi VNC Server Browser">
+       <action name="Execute"><execute>/usr/bin/bvnc</execute></action>
+     </item>
+      <item label="Firefox" icon="/usr/share/icons/hicolor/16x16/apps/firefox.png">
+       <action name="Execute"><execute>/usr/lib/firefox/firefox </execute></action>
+     </item>
+ </menu> <!-- Internet -->
+ <menu id="Sound &amp; Video" label="Sound &amp; Video">
+      <item label="Qt V4L2 test Utility" icon="/usr/share/icons/hicolor/16x16/apps/qv4l2.png">
+       <action name="Execute"><execute>qv4l2</execute></action>
+     </item>
+      <item label="Qt V4L2 video capture utility" icon="/usr/share/icons/hicolor/16x16/apps/qvidcap.png">
+       <action name="Execute"><execute>qvidcap</execute></action>
+     </item>
+ </menu> <!-- Sound & Video -->
+ <menu id="System Tools" label="System Tools">
+      <item label="Avahi Zeroconf Browser">
+       <action name="Execute"><execute>/usr/bin/avahi-discover</execute></action>
+     </item>
+      <item label="Tint2">
+       <action name="Execute"><execute>tint2</execute></action>
+     </item>
+      <item label="UXTerm" icon="/usr/share/pixmaps/xterm-color_48x48.xpm">
+       <action name="Execute"><execute>uxterm</execute></action>
+     </item>
+      <item label="XTerm" icon="/usr/share/pixmaps/xterm-color_48x48.xpm">
+       <action name="Execute"><execute>xterm</execute></action>
+     </item>
+ </menu> <!-- System Tools -->

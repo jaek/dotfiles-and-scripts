@@ -1,0 +1,15 @@
+Description='uniwide'
+Interface=wlp3s0
+Connection=wireless
+Security=wpa
+ESSID=uniwide
+IP=dhcp
+Security='wpa-configsection'
+WPAConfigSection=(
+	'ssid="uniwide"'
+	'key_mgmt=WPA-EAP'
+	'eap=PEAP'
+	'identity="ZPASS"'
+	'password="PASSWORD"'
+	'phase2="auth=MSCHAPV2"'
+)

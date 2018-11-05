@@ -1,0 +1,5 @@
+# mmaker - generate menus
+mmaker -vf OpenBox3
+tint2 - dockbar 
+# restart
+openbox --reconfigure
